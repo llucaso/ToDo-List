@@ -1,0 +1,77 @@
+﻿$color-gray: #2e3641
+$color-background: #e9f0f4
+$color-border: #e6ebed
+$color-outline: #f2e3df
+$font-lightGray: #dae4eb
+$font-main: 'Lato', 'sans-serif'
+
+@import "bourbon/bourbon"
+
+*
+	margin: 0px
+	padding: 0px
+	border-sizing: border-box
+
+body
+	background-color: black
+
+
+.container
+	+display(flex)
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 100%
+
+
+
+
+
+.ToDo-List
+	width: 320px
+	height: 36px
+	background-color: $color-gray
+	.lines
+		padding: 18px 2px
+		margin-left: 30px
+		border-color: #454f5c
+	h4
+		color: $font-lightGray
+		font:
+			family: $font-main
+			size: 14px
+			weight: normal
+		margin-left: 42px
+		margin-top: 10px
+
+.row
+	height: 28px
+	width: 318px
+	background-color: #ffffff
+	border-bottom: 1px solid $color-border
+	border-left: 1px solid $color-border
+	border-right: 1px solid $color-border
+	input
+		margin-left: 45px
+		margin-top: 8.5px
+		width: 260px
+		border: none
+		outline: none
+		cursor: pointer
+	img
+		position: absolute
+		margin: 11px 10px
+		cursor: pointer
+	
+.lines
+	padding: 14.5px 2px
+	border-left: 1px solid $color-outline
+	border-right: 1px solid $color-outline
+	position: absolute
+	z-index: 1
+	margin-left: 29px
+		
+
+
+
