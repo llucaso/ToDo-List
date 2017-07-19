@@ -53,7 +53,7 @@ body
 	border-bottom: 1px solid $color-border
 	border-left: 1px solid $color-border
 	border-right: 1px solid $color-border
-	input
+	.input
 		margin-left: 45px
 		margin-top: 7px
 		width: 239px
@@ -107,4 +107,46 @@ body
 	margin-left: 29px
 
 
+//checbox
+.fancy-checkbox
+	clip: rect(1px, 1px, 1px, 1px)
+	position: absolute !important
+	height: 1px
+	width: 1px
+	overflow: hidden
 
+label.fancy-checkbox-label
+	display: block
+	cursor: pointer
+	position: relative
+	width: 150px
+	font-size: 18px
+	line-height: 1.5em
+
+label.fancy-checkbox-label:before
+	position: absolute
+	top: 0px
+	right: 0px
+	display: block
+	width: 20px
+	height: 20px
+	border: 2px solid #dae4eb
+	background: #f9fafb
+	content: " "
+
+  
+label.fancy-checkbox-label:after
+	position: absolute
+	top: 6px
+	right: 5px
+	width: 10px
+	height: 5px
+	content: " "
+	transform: rotate(-50deg)
+	border-bottom: 3px solid #acc04e
+	border-left: 3px solid #acc04e
+	opacity: 0
+
+
+input:checked + label.fancy-checkbox-label:after
+	opacity: 1
