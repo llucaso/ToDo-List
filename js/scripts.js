@@ -14,15 +14,11 @@ function addItemTodo(text) {
 	var item = document.createElement('div');
 	item.classList.add('row-text');
 
-	var checkbox = document.createElement('input');
-	checkbox.type = ('checkbox');
-	checkbox.value = ('None');
-	checkbox.classList.add('fancy-checkbox');
-	checkbox.id = ('fancy-checkbox');
-	checkbox.name = ('fancy-checkbox');
-	var checkbox2 = document.createElement('label');
-	checkbox2.classList.add('fancy-checkbox-label');
-	checkbox2.setAttribute = ('for', 'fancy-checkbox');
+	var label = document.createElement('label');
+	var input = document.createElement('input');
+	input.type = ('checkbox');
+	var span = document.createElement('span');
+	
 // Click event for check tasks
 	//checkbox.addEventListener('click', checkTask);
 
@@ -39,8 +35,9 @@ function addItemTodo(text) {
 	imgTrash.addEventListener('click', removeItem);
 
 	list.appendChild(item);
-	item.appendChild(checkbox);
-	item.appendChild(checkbox2);
+	item.appendChild(label);
+	label.appendChild(input);
+	label.appendChild(span);
 	item.appendChild(lines);
 	item.appendChild(task);
 	item.appendChild(imgTrash);
@@ -56,11 +53,9 @@ function removeItem(){
 
 // Check task
 
-//function checkTask(){
+function checkTask(){
 
-// var item = this.parentNode;
-// var img = document.createElement('img');
-// img.classList.add('checked');
-// img.src = '/img/ok.png';
-//item.appendChild(img);
-//}
+	var item = this.parentNode;
+	console.log(item)
+
+}

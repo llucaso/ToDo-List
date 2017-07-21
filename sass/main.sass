@@ -104,49 +104,26 @@ body
 	border-right: 1px solid $color-outline
 	position: absolute
 	z-index: 1
-	margin-left: 29px
+	margin-left: 29px 
 
 
-//checbox
-.fancy-checkbox
-	clip: rect(1px, 1px, 1px, 1px)
-	position: absolute !important
-	height: 1px
-	width: 1px
+label input
+	visibility: hidden
+	display: block
+	height: 0
+	width: 0
+	position: absolute
 	overflow: hidden
 
-label.fancy-checkbox-label
-	display: block
-	cursor: pointer
-	position: relative
-	width: 150px
-	font-size: 18px
-	line-height: 1.5em
-
-label.fancy-checkbox-label:before
+label span
+	margin-top: 10px
+	margin-left: 10px
+	height: 9px
+	width: 9px
+	//border: 1px solid #dae4eb
+	display: inline-block
+	background: url(/Checkbox.png)
 	position: absolute
-	top: 0px
-	right: 0px
-	display: block
-	width: 20px
-	height: 20px
-	border: 2px solid #dae4eb
-	background: #f9fafb
-	content: " "
 
-  
-label.fancy-checkbox-label:after
-	position: absolute
-	top: 6px
-	right: 5px
-	width: 10px
-	height: 5px
-	content: " "
-	transform: rotate(-50deg)
-	border-bottom: 3px solid #acc04e
-	border-left: 3px solid #acc04e
-	opacity: 0
-
-
-input:checked + label.fancy-checkbox-label:after
-	opacity: 1
+[type=checkbox]:checked + span
+	background: url(/ok.png)
