@@ -19,13 +19,14 @@ function addItemTodo(text) {
 	input.type = ('checkbox');
 	var span = document.createElement('span');
 	
-// Click event for check tasks
-	//checkbox.addEventListener('click', checkTask);
+//Click event for check tasks
+	span.addEventListener('click', checkTask);
 
 	var lines = document.createElement('div');
 	lines.classList.add('lines');
 
 	var task = document.createElement('p');
+	task.classList.add('whattt');
 	task.innerText = text;
 
 	var imgTrash = document.createElement('img');
@@ -47,7 +48,7 @@ function addItemTodo(text) {
 function removeItem(){
 	var item = this.parentNode;
 	var parent = this.parentNode.parentNode;
-
+	
 	parent.removeChild(item);
 };
 
@@ -55,7 +56,14 @@ function removeItem(){
 
 function checkTask(){
 
-	var item = this.parentNode;
-	console.log(item)
 
-}
+	// var text = document.getElementsByTagName('p');
+	// var trash = document.getElementsByTagName('img');
+	// text.classList.add('checked');
+	var item = this.parentNode.parentNode;
+	var text = document.getElementsByTagName('p');
+	//text.classList.add('2222');
+		console.log( text );
+
+
+	};
