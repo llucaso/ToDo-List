@@ -58,12 +58,11 @@ function checkTask(){
 
 
 	// var text = document.getElementsByTagName('p');
-	// var trash = document.getElementsByTagName('img');
 	// text.classList.add('checked');
 	var item = this.parentNode.parentNode;
-	var text = document.getElementsByTagName('p');
-	//text.classList.add('2222');
-		console.log( text );
+	var text = item.getElementsByTagName('p');
+	text.classList.add('nowa-klasa');
+		console.log(item);
 
 
 	};
