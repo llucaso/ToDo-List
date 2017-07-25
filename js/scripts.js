@@ -61,8 +61,8 @@ function checkTask(){
 	// text.classList.add('checked');
 	var item = this.parentNode.parentNode;
 	var text = item.getElementsByTagName('p');
-	text.classList.add('nowa-klasa');
-		console.log(item);
+	text[0].classList.add('nowa-klasa');
+		console.log(text);
 
 
 	};
