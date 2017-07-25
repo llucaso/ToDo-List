@@ -78,7 +78,8 @@ body {
     margin: 11px 10px;
     cursor: pointer; }
   .todo-container .row-text .checked-text {
-    opacity: 0.6; }
+    opacity: 0.6;
+    text-decoration: line-through; }
   .todo-container .row-text .checked-trash {
     opacity: 0.6; }
   .todo-container .row-text .trash {
