@@ -26,7 +26,6 @@ function addItemTodo(text) {
 	lines.classList.add('lines');
 
 	var task = document.createElement('p');
-	task.classList.add('whattt');
 	task.innerText = text;
 
 	var imgTrash = document.createElement('img');
@@ -56,13 +55,31 @@ function removeItem(){
 
 function checkTask(){
 
+	var item = this.parentNode.parentNode;
+	var text = item.getElementsByTagName('p');
+	var img = item.getElementsByTagName('img');
+	var checkbox = item.getElementsByTagName('span');
+
+
+
+	if (checkbox.checked) {
+
+		text[0].classList.add('checked-text');
+		img[0].classList.add('checked-trash');
+
+	} else {
+
+
+	}
+
+
 
 	// var text = document.getElementsByTagName('p');
 	// text.classList.add('checked');
-	var item = this.parentNode.parentNode;
-	var text = item.getElementsByTagName('p');
-	text[0].classList.add('nowa-klasa');
-		console.log(text);
+	
+	//text[0].classList.add('checked-text');
+	//img[0].classList.add('checked-trash');
+	console.log(checkbox);
 
 
 	};
