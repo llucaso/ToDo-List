@@ -78,10 +78,10 @@ body {
     margin: 11px 10px;
     cursor: pointer; }
   .todo-container .row-text .checked-text {
-    opacity: 0.6;
+    color: #9eb2c0;
     text-decoration: line-through; }
   .todo-container .row-text .checked-trash {
-    opacity: 0.6; }
+    opacity: 0.4; }
   .todo-container .row-text .trash {
     margin: 8px 12px;
     position: absolute; }
@@ -108,10 +108,10 @@ label span {
   height: 9px;
   width: 9px;
   display: inline-block;
-  background: url(/Checkbox.png);
+  background: url(/img/Checkbox.png);
   position: absolute; }
 
 [type=checkbox]:checked + span {
-  background: url(/ok.png); }
+  background: url(/img/ok.png); }
 
 /*# sourceMappingURL=main.css.map */

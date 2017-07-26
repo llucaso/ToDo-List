@@ -1,4 +1,5 @@
 ﻿$color-gray: #2e3641
+$color-checked: #9eb2c0
 $color-background: #e9f0f4
 $color-border: #e6ebed
 $color-outline: #f2e3df
@@ -15,7 +16,6 @@ $font-main: 'Lato', 'sans-serif'
 
 body
 	background-color: black
-
 
 .container
 	+display(flex)
@@ -87,10 +87,10 @@ body
 			margin: 11px 10px
 			cursor: pointer
 		.checked-text
-			opacity: 0.6
+			color: $color-checked
 			text-decoration: line-through
 		.checked-trash
-			opacity: 0.6
+			opacity: 0.4
 		.trash
 			margin: 8px 12px
 			position: absolute
@@ -102,7 +102,6 @@ body
 	position: absolute
 	z-index: 1
 	margin-left: 29px 
-
 
 label input
 	visibility: hidden
@@ -119,9 +118,9 @@ label span
 	width: 9px
 	//border: 1px solid #dae4eb
 	display: inline-block
-	background: url(/Checkbox.png)
+	background: url(/img/Checkbox.png)
 	position: absolute
 
 [type=checkbox]:checked + span
-	background: url(/ok.png)
+	background: url(/img/ok.png)
 

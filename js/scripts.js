@@ -51,8 +51,7 @@ function removeItem(){
 	parent.removeChild(item);
 };
 
-// Check task
-
+// Check tasks
 function checkTask(){
 
 	var itemm = this.parentNode.childNodes;
@@ -60,8 +59,6 @@ function checkTask(){
 	var text = item.getElementsByTagName('p');
 	var img = item.getElementsByTagName('img');
 	var checkbox = item.getElementsByTagName('input');
-
-
 
 	if (checkbox[0].checked) {
 
@@ -73,15 +70,4 @@ function checkTask(){
 		img[0].classList.remove('checked-trash');
 
 	}
-
-
-
-	// var text = document.getElementsByTagName('p');
-	// text.classList.add('checked');
-	
-	//text[0].classList.add('checked-text');
-	//img[0].classList.add('checked-trash');
-
-
-
-	};
+};
